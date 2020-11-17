@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="../img/favicon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>proyecto</title>
+</head>
+
+<body class="scrollbar scrollbar-lady-lips">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../img/rowlet_brand.jpg" width="30" height="30" class="d-inline-block align-top img-navM" alt=""
+                loading="lazy">
+            Mau Torres
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="cv.html">CV</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="crud.html">CRUD</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid contentB" id="project-page">
+        <div class="row text-center">
+            <div class="col text-center p-2">
+                <h1>Proyectos</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-xl-3 p-4">
+                <div class="row">
+                    <div id="divAlert"></div>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <form id="project-form">
+                        <div class="form-group">
+                            <select class="form-control" id="project-filter">
+                                <option>No filter..</option>
+                                <option>Option1</option>
+                                <option>Option2</option>
+                                <option>Option3</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col p-4 ">
+                <div class="row" id="project-container">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer p-3 bg-dark text-light">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-xl-4 pt-2">
+                    <h1 class="h3">Información de contacto</h4>
+                        <p class="footer-info">
+                            Celular: 55 6478 7203 <br />Tel: 2596 0816 <br />Correo:
+                            <a class="text-light" href="#">mauricio_torresm@hotmail.com</a>
+                        </p>
+                        Pages
+                        <ul class="pb-3">
+                            <li><a href="../index.html" class="text-light">Home</a></li>
+                            <li><a href="cv.html" class="text-light">CV</a></li>
+                            <li><a href="projects.html" class="text-light">Projects</a></li>
+                        </ul>
+                        <div class="pb-4">
+                            <a href="https://drive.google.com/file/d/1iw__rojMr2424CQHqhqVgirK4uJqfVkt/view?usp=sharing"  target="_blank" class="text-light">Referencias</a>
+                        </div>
+                        Redes sociales
+                        <div class="footer-social-icons">
+                            <ul class="social-icons">
+                                <li>
+                                    <a href="https://github.com/MauTorres12" class="social-icon">
+                                        <i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/MauTorres12" class="social-icon">
+                                        <i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/MauTorres12" target="_blank" class="social-icon">
+                                        <i class="fa fa-github"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="col-12 col-xl-4 center">
+                    <iframe width="400px" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Av%20Miguel%20%C3%81ngel%20de%20Quevedo,%20Oxtopulco,%20Coyoac%C3%A1n,%2004310%20Ciudad%20de%20M%C3%A9xico,%20CDMX+(Oficinas%20Mau)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                </div>
+                <div class="col-12 col-xl-4">
+                    <form>
+                        <div class="form-group">
+                            <label for="inputNombre">Nombre:</label>
+                            <input type="text" class="form-control" id="inputNombre"
+                                placeholder="Introduce tu nombre" />
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail1">Email:</label>
+                            <input type="email" class="form-control" id="inputEmail1"
+                                placeholder="Introduce tu email" />
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail1">Telefono:</label>
+                            <input type="tel" class="form-control" id="inputTel" placeholder="(55)-5555-5555" />
+                        </div>
+                        <div class="form-group">
+                            <label for="inputMensaje">Mensaje:</label>
+                            <textarea class="form-control" id="inputMensaje" rows="3"></textarea>
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <select class="custom-select" id="inputPais">
+                                <option selected>Pais...</option>
+                                <option value="Afganistan">Afghanistan</option>
+                                <option value="Aruba">Aruba</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Austria">Austria</option>
+                            </select>
+                        </div>
+                        <div style="margin-top: 15px; margin-bottom: 15px;">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Radios" id="personaRadio"
+                                    value="option1" checked />
+                                <label class="form-check-label" for="personaRadio">
+                                    Persona
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="Radios" id="empresaRadio"
+                                    value="option2" />
+                                <label class="form-check-label" for="empresaRadio">Empresa</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary amarillo">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-storage.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDqnakHAEgRYjPe39HpRFmEj8yhDHan1X4",
+            authDomain: "mau-torres.firebaseapp.com",
+            databaseURL: "https://mau-torres.firebaseio.com",
+            projectId: "mau-torres",
+            storageBucket: "mau-torres.appspot.com",
+            messagingSenderId: "999660140241",
+            appId: "1:999660140241:web:e1d9b9136eabab57f877f0",
+            measurementId: "G-2793EXR8BX"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="../scripts/main2.js"></script>
+</body>
+
+</html>

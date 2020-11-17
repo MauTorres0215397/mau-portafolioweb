@@ -1,0 +1,158 @@
+h1:first-of-type {
+  color: #2ab7ca;
+}
+
+.footer h1 {
+  color: #fed766;
+}
+
+.contentB h3 {
+  color: #fed766;
+}
+
+#project-container h3 {
+  color: black;
+}
+
+strong {
+  color: #fe4a49;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff,
+    1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+footer,
+nav {
+  font-family: "Nunito", sans-serif;
+}
+
+.contentB {
+  font-family: "Roboto", sans-serif;
+  background-image: url("../img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.img-navM {
+  border-radius: 15px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*proyectos*/
+
+.btnConoce {
+  max-width: 150px;
+}
+
+.border-project-op1 {
+  border: 5px solid #fe4a49;
+}
+
+.bg-op1 {
+  background-color: #fe4a49;
+}
+
+.border-project-op2 {
+  border: 5px solid #2ab7ca;
+}
+
+.bg-op2 {
+  background-color: #2ab7ca;
+}
+
+.border-project-op3 {
+  border: 5px solid #fed766;
+}
+
+.bg-op3 {
+  background-color: #fed766;
+}
+
+.project {
+  max-width: 315px;
+}
+
+.project:hover {
+  -webkit-transform: scale(1.05, 1.07);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 250ms;
+  -moz-transform: scale(1.05, 1.07);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 250ms;
+}
+
+/*footer*/
+a:hover {
+  text-decoration: none;
+}
+
+ul.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons li {
+  vertical-align: top;
+  display: inline;
+  height: 100px;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.fa-facebook {
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #322f30;
+}
+
+.fa-facebook:hover {
+  background-color: #3d5b99;
+}
+
+.fa-twitter {
+  padding: 10px 12px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #322f30;
+}
+
+.fa-twitter:hover {
+  background-color: #00aced;
+}
+
+.fa-github {
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #322f30;
+}
+
+.fa-github:hover {
+  background-color: #5a32a3;
+}
+
+@media (max-width: 768px) {
+  * {
+    font-size: 1.2rem;
+  }
+
+  img-proyecto {
+    width: 1.5rem;
+  }
+}
