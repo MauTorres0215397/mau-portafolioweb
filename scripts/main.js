@@ -187,60 +187,64 @@ const textCrud = document.querySelector(".texto-crud");
 
 const loginCheck = (user) => {
   if (user) {
+    if (user.uid == "8ZLDuhFGEYglbMx2CKsO6dFiEHh1") {
+      onGetProject((querySnapshot) => {
+        //si cambia algo en la BD se ejecuta esto
+        projectContainer.innerHTML = "";
+        let color = "";
+        querySnapshot.forEach((doc) => {
+          //console.log(doc.data());
+
+          const project = doc.data();
+          project.id = doc.id;
+
+          switch (project.category) {
+            case "Option1":
+              color = "bg-op1";
+              break;
+            case "Option2":
+              color = "bg-op2";
+              break;
+            case "Option3":
+              color = "bg-op3";
+              break;
+          }
+
+          if (!project.imgURL) {
+            project.imgURL =
+              "https://firebasestorage.googleapis.com/v0/b/mau-torres.appspot.com/o/img-placeholder.png?alt=media&token=558f794c-ed21-43e1-aca5-537305746639";
+          }
+
+          elements.push({
+            title: project.title,
+            description: project.description,
+            category: project.category,
+            imgURL: project.imgURL,
+            color: color,
+            id: project.id,
+          });
+
+          projectContainer.innerHTML += projectTemplate(
+            project.title,
+            project.category,
+            project.imgURL,
+            color,
+            project.id
+          );
+
+          btnDeleteProject();
+          btnEditProject();
+          pageProject();
+        });
+      });
+    } else {
+      projectContainer.innerHTML =
+        '<h4 class="h1">Para poder modificar la bd ponte en contacto con alguien para registrar tu cuenta como administrador</h4>';
+    }
     loggedInLinks.forEach((link) => (link.style.display = "inline"));
     loggedOutLinks.forEach((link) => (link.style.display = "none"));
     crudForm.style.display = "inline";
     textCrud.style.display = "none";
-
-    onGetProject((querySnapshot) => {
-      //si cambia algo en la BD se ejecuta esto
-      projectContainer.innerHTML = "";
-      let color = "";
-      querySnapshot.forEach((doc) => {
-        //console.log(doc.data());
-
-        const project = doc.data();
-        project.id = doc.id;
-
-        switch (project.category) {
-          case "Option1":
-            color = "bg-op1";
-            break;
-          case "Option2":
-            color = "bg-op2";
-            break;
-          case "Option3":
-            color = "bg-op3";
-            break;
-        }
-
-        if (!project.imgURL) {
-          project.imgURL =
-            "https://firebasestorage.googleapis.com/v0/b/mau-torres.appspot.com/o/img-placeholder.png?alt=media&token=558f794c-ed21-43e1-aca5-537305746639";
-        }
-
-        elements.push({
-          title: project.title,
-          description: project.description,
-          category: project.category,
-          imgURL: project.imgURL,
-          color: color,
-          id: project.id,
-        });
-
-        projectContainer.innerHTML += projectTemplate(
-          project.title,
-          project.category,
-          project.imgURL,
-          color,
-          project.id
-        );
-
-        btnDeleteProject();
-        btnEditProject();
-        pageProject();
-      });
-    });
   } else {
     loggedInLinks.forEach((link) => (link.style.display = "none"));
     loggedOutLinks.forEach((link) => (link.style.display = "inline"));
