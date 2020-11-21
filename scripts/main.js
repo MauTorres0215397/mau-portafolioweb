@@ -237,14 +237,14 @@ const loginCheck = (user) => {
           pageProject();
         });
       });
+      crudForm.style.display = "inline";
+      textCrud.style.display = "none";
     } else {
       projectContainer.innerHTML =
         '<h4 class="h1">Para poder modificar la bd ponte en contacto con alguien para registrar tu cuenta como administrador</h4>';
     }
     loggedInLinks.forEach((link) => (link.style.display = "inline"));
     loggedOutLinks.forEach((link) => (link.style.display = "none"));
-    crudForm.style.display = "inline";
-    textCrud.style.display = "none";
   } else {
     loggedInLinks.forEach((link) => (link.style.display = "none"));
     loggedOutLinks.forEach((link) => (link.style.display = "inline"));
